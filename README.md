@@ -1,2 +1,2 @@
 # jessicakjellin.github.io
-a webpage I have created
+currently hosting: https://github.com/jessicakjellin/eatit
