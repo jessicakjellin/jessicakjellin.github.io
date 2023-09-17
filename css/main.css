@@ -1,0 +1,463 @@
+@font-face {
+  font-family: 'Playfair Display SC';
+  src: url(fonts/playfair-display-sc/PlayfairDisplaySC-Regular.ttf);
+}
+
+/* generella regler */
+body {
+  color: #FDE3A7;
+}
+
+h1, h2, h3, nav ul, #copyright, .heading, table th {
+  font-weight: 800;
+  letter-spacing: 0.4rem;
+  font-family: 'Playfair Display SC', serif;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.1;
+  margin-bottom: 1rem; 
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+}
+
+p {
+  font-size: 1.8rem;
+  margin: 0 0 2rem 0;
+}
+
+td {
+  font-size: 1.3rem;
+}
+
+#recipie-header {
+  margin-left: 5rem;
+}
+
+/* bakgrundsfärg */
+body, main, header, nav {
+  background-color: #244C46;
+}
+
+footer {
+  background-color: #9A424F;
+}
+
+#copyright {
+  background-color: #FDE3A7;
+}
+
+main, nav, footer, #copyright {
+  margin: 0 auto;
+  max-width: 100rem;
+}
+
+/* nav */
+nav {
+  font-size: 2rem;
+  margin: 0 auto;
+}
+
+nav ul {
+  text-transform: lowercase;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li a {
+  color: #FDE3A7;
+}
+
+nav a:hover, nav a:focus {
+  letter-spacing: 0.5rem;
+  font-style: italic;
+  text-decoration: overline underline;
+  border: none;
+  outline: none;
+}
+
+nav .active {
+  background-color: #9A424F;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+/* main */
+section ul {
+  line-height: 2;
+  display: flex; 
+  justify-content: center;
+}
+
+section ul li {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+section ul li, section ul li p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+section ul li a {
+  color: #FDE3A7;
+  font-style: italic;
+}
+
+section a:hover, section a:focus {
+  letter-spacing: 0.1rem;
+  font-style: italic;
+  text-decoration: overline underline;
+  border: none;
+  outline: none;
+}
+
+/* for images beside text */
+.text-container {
+  margin-left: 1rem;
+}
+.image-container {
+  text-align: center;
+}
+
+.image-container img {
+  width: 400px;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+#copyright p {
+  font-size: 1rem;
+  text-align: center;
+  color: #244C46;
+  padding: 0.5rem 0.5rem;
+}
+
+/* form (button from search-div) */
+input, select, textarea, button {
+  color:#000;
+  font-size: 1.3rem;
+  border: 3px solid #FDE3A7;
+  border-radius: 1%;
+}
+
+input[type="submit"], input[type="reset"], button {
+  background-color: #9A424F;
+  color: #FDE3A7;
+  border: 3px solid #FDE3A7;
+  border-radius: 1%;
+  padding: 0.5rem;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: 3px solid #9A424F;
+}
+
+form a {
+  color: #FDE3A7;
+  font-style: italic;
+}
+
+.disclaimer {
+  font-size: 1.2rem;
+}
+
+form p:last-child {
+  display: flex;
+  flex-direction: column;
+}
+
+/* table */
+tbody tr:nth-of-type(odd){
+  background-color: #236158;
+}
+
+/* search-div */
+#searchText {
+  margin: 1rem;
+}
+
+div #searchResult {
+  margin: 1rem;
+}
+
+/* menu image */
+#menu-img {
+  display: flex; 
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+/* map */
+iframe {
+  border: 0;
+}
+
+@media(max-width: 1010px) {  
+  #wrapper {
+    background-color: #244C46;
+  }
+
+  header {
+    padding: 2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  nav ul li {
+    padding: 0;
+    text-align: center;
+  }
+
+  nav a:hover, nav a:focus {
+    text-decoration: underline;
+  }
+
+  main section {
+    padding: 0rem;
+  }
+
+  h3 {
+    margin-left: 1rem;
+  }
+
+  footer {
+    margin: 1rem;
+    flex-direction: column;
+  }
+
+  footer address {
+    margin: 1rem;
+  }
+
+  p {
+    text-align: left;
+    margin-left: 1rem;
+  }
+
+  section ul {
+    flex-direction: column;
+    margin: 1rem;
+  }
+
+  section ul li {
+    margin: 1rem;
+    border: 3px solid #9A424F;
+  }
+
+  /* form */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  label {
+    width: 100%;
+    text-align: left;
+    display: block;
+  }
+
+  input, select, textarea {
+    width: 100%; 
+    margin: 1rem 0;
+  }
+
+  .disclaimer {
+    text-align: center;
+    margin: 0 1rem 1rem 1rem;
+  }
+
+  /* table */
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  tbody {
+    margin: 1rem;
+  }
+  
+  thead tr{
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border-bottom: 1px solid #9A424F;
+    padding-top: 0.5rem;
+  }
+
+  td {
+    position: relative;
+    padding-left: 50%;
+    padding-bottom: 0.5rem;
+  }
+
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 800;
+    letter-spacing: 0.4rem;
+  }
+
+  td:nth-of-type(1):before {
+    content: "Typ";
+  }
+
+  td:nth-of-type(2):before {
+    content: "Beskrivning";
+  }
+
+  td:nth-of-type(3):before {
+    content: "Pris";
+  }
+
+  /* search-div */
+  #searchText {
+    width: 70%;
+  }
+
+  /* map */
+  iframe {
+    width: 450px; 
+    height: 300px; 
+    margin-left: 1rem;
+  }
+
+  #contact-text {
+    margin-left: 2rem;
+  }
+}
+
+@media(min-width: 1011px) {
+  h1 {
+    padding: 2rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+    margin-top: 5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 4rem;
+  }
+
+  section header {
+    width: 50%;
+    margin: 1rem;
+  }
+
+  /* for images beside text */
+  .text-beside-image {
+    display: flex;
+    width: 100%;
+  }
+  
+  .text-container {
+    flex-basis: 50%;
+  }
+  
+  .image-container {
+    flex-basis: 50%;
+  }
+
+  /* nav */
+  nav ul li a {
+    padding: 1.5rem;
+  }
+
+  /* footer */
+  footer {
+    justify-content: space-around;
+  }
+
+  /* form */
+  form {
+    width: 100%;
+    max-width: 50rem;
+    margin: 1rem;
+  }
+
+  label {
+    width: 12rem;
+    float: left;
+    text-align: right;
+    margin-right: 0.6rem;
+  }
+
+  form p:last-child {
+    flex-direction: row;
+  }
+
+  form p:last-child input {
+    margin: 1rem;
+  }
+  
+  /* table */
+  table {
+    width: 100%;
+    max-width: 80rem; 
+    margin-bottom: 2rem;
+  }
+
+  table th {
+    text-align: center;
+    letter-spacing: 0.3rem;
+    padding: 0.5rem;
+  }
+
+  td {
+    padding: 0.5rem;
+  }
+
+  /* map */
+  #contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 3rem;
+  }
+
+  iframe {
+    width: 600px; 
+    height: 450px; 
+    margin-bottom: 1rem;
+    flex: 1;
+    margin-right: 5rem;
+  }
+
+  #contact-text {
+    flex: 1;
+  }
+}

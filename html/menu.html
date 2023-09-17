@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <title>EatIT</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+  <meta name="description" content="Kolla in vår meny och se vilka vinprovningar vi erbjuder.">
+  <link href="../css/reset.css" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="../images/favicon.ico" rel="icon">
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>EatIT</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="../index.html">Hem</a></li> 
+        <li><a href="book.html">Boka</a></li>
+        <li class="active"><a href="menu.html">Meny</a></li>
+        <li><a href="recepies.html">Recept</a></li>
+        <li><a href="contact.html">Kontakta oss</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <header>
+          <h2>Se vår meny</h2>
+        </header>
+
+        <picture id="menu-img">
+          <source media="(max-width: 1010px)" srcset="../images/smaller/menu.png">
+          <source media="(min-width: 1011px)" srcset="../images/larger/menu.png">
+          <img src="../images/smaller/menu.png" alt="Meny. Antipasti: Prosciutto e melone, 80kr. Pasta: Trofie al pesto, 100kr. Pizza: Margherita, 100kr. Dolce: Crema al caffè, 50kr. Aperitivo: Aperol spritz, 80kr.">
+        </picture>
+
+        <h3>Upptäck våra vinprovningar</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th id="Type">Typ</th>
+              <th id="Description">Beskrivning</th>
+              <th id="Cost">Pris</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td headers="Type">Vita viner</td>
+              <td headers="Description">Prova en blandning av friska, fylliga och blommiga vita viner. Små pastarätter med skaldjur och kyckling samt charkbräda.</td>
+              <td headers="Cost">650 kr</td>
+            </tr>
+
+            <tr>
+              <td headers="Type">Röda viner</td>
+              <td headers="Description">Prova en blandning av lätta, kraftiga och kryddiga röda viner tillsammans med små rätter av pizza, lasagne och stekar.</td>
+              <td headers="Cost">700 kr</td>
+            </tr>
+
+            <tr>
+              <td headers="Type">Blind provning</td>
+              <td headers="Description">Prova våra bästa viner, vitt som rött. Till detta fås en unik blandning av smårätter som passar till vinerna ni provar.</td>
+              <td headers="Cost">800 kr</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <address>
+        <p class="heading">Hitta till oss:</p>
+        <p>Vägvägen 32, Staden</p>
+      </address>
+      <address>
+        <p class="heading">Ring oss:</p>
+        <p>070 007 07 07</p>
+      </address>
+      <address>
+        <p class="heading">Maila oss:</p>
+        <p>eat@it.com</p>
+      </address>
+    </footer>
+
+    <div id="copyright">
+      <p>&copy; Jessica Kjellin</p>
+    </div> <!--end copyright-->
+
+  </div> <!--end wrapper-->
+</body>
+
+</html>

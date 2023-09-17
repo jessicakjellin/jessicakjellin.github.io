@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <title>EatIT</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+  <meta name="description" content="Boka bord hos oss i formuläret för att få en oförglömlig matupplevelse.">
+  <link href="../css/reset.css" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="../images/favicon.ico" rel="icon">
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>EatIT</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="../index.html">Hem</a></li> 
+        <li class="active"><a href="book.html">Boka</a></li>
+        <li><a href="menu.html">Meny</a></li>
+        <li><a href="recepies.html">Recept</a></li>
+        <li><a href="contact.html">Kontakta oss</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <header>
+          <h2>Boka bord hos oss</h2>
+          <p>Ta del av en oförglömlig italiensk måltid hos oss genom att boka bord via formuläret nedan:</p>
+        </header>
+
+        <div class="text-beside-image">
+          <div class="text-container">
+            <form method="post" action="thanks.html">
+              <p>
+                <label for="Name">Namn*:</label>
+                <input type="text" name="name" id="Name" required>
+              </p>
+
+              <p>
+                <label for="Phone">Telefonnummer*:</label>
+                <input type="tel" name="phone" id="Phone" pattern="[0-9]{3}-[0-9]{3} [0-9]{2} [0-9]{2}" placeholder="xxx-xxx xx xx" required>
+              </p>
+
+              <p>
+                <label for="Date">Datum*:</label>
+                <input type="date" name="date" id="Date" required>
+              </p>
+
+              <p>
+                <label for="Guests">Antal gäster*:</label>
+                <select name="guests" id="Guests">
+                  <option value="one">1</option>
+                  <option value="two">2</option>
+                  <option value="three">3</option>
+                  <option value="four">4</option>
+                  <option value="five">5</option>
+                  <option value="six">6</option>
+                  <option value="seven">7</option>
+                  <option value="eight">8</option>
+                </select>
+              </p>
+              <p class="disclaimer">För större sällskap, vänligen <a href="contact.html">kontakta oss.</a></p>
+
+              <p>
+                <label for="WineTasting">Boka vinprovning?:</label> 
+                <select name="winetasting" id="WineTasting">
+                  <option value="no">Nej</option>
+                  <option value="white">Vita viner</option>
+                  <option value="red">Röda viner</option>
+                  <option value="blind">Blind vinprovning</option>
+                </select>
+              </p>
+
+              <p>
+                <label for="Comments">Extra information:</label>
+                <textarea name="comments" rows="5" cols="20" id="Comments" placeholder="Annan information som vi bör känna till."></textarea>
+              </p>
+              <p class="disclaimer">Fält markerade med asterisk (*) måste fyllas i.</p>
+
+              <p>
+                <input type="submit" value="Skicka in din bokning">
+                <input type="reset" value="Rensa formuläret">
+              </p>
+            </form>
+          </div> <!-- end text-container -->
+
+          <div class="image-container">
+            <img src="../images/book-picture.png" alt="Hos oss kan man äta god pasta och boka vinprovning">
+          </div> <!-- end image-container -->
+          
+        </div> <!-- end text-beside-image--> 
+      </section>
+    </main>
+
+    <footer>
+      <address>
+        <p class="heading">Hitta till oss:</p>
+        <p>Vägvägen 32, Staden</p>
+      </address>
+      <address>
+        <p class="heading">Ring oss:</p>
+        <p>070 007 07 07</p>
+      </address>
+      <address>
+        <p class="heading">Maila oss:</p>
+        <p>eat@it.com</p>
+      </address>
+    </footer>
+
+    <div id="copyright">
+      <p>&copy; Jessica Kjellin</p>
+    </div> <!--end copyright-->
+
+  </div> <!--end wrapper-->
+</body>
+
+</html>

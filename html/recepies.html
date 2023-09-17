@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <title>EatIT</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+  <meta name="description" content="Ta en titt på recepten till några av våra favoriträtter. Sök även efter passande fördrink.">
+  <link href="../css/reset.css" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="../images/favicon.ico" rel="icon">
+  <script src="../js/index.js" type="module"></script>  
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>EatIT</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="../index.html">Hem</a></li> 
+        <li><a href="book.html">Boka</a></li>
+        <li><a href="menu.html">Meny</a></li>
+        <li class="active"><a href="recepies.html">Recept</a></li>
+        <li><a href="contact.html">Kontakta oss</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <header>
+          <h2>Ta del av våra favoritrecept</h2>
+          <p>Har du inte möjlighet att besöka oss nu? Oroa dig inte, vi har samlat våra favoritrecept så ni kan avnjuta autentisk italiensk kost på hemmaplan.</p>
+        </header>
+
+        <h3 id="recipie-header">Antipasti</h3>
+
+        <ul>
+          <li><a href="recipies/melone.html">Prosciutto e melone</a>
+            <p>Salt möter sött i denna klassiska förrätt.</p>
+          </li>
+          <li><a href="recipies/caprese.html">Caprese sallad</a> 
+            <p>En klassisk sallad som aldrig kan slå fel.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <header>
+          <h2>Hitta tillhörade aperitivo</h2>
+          <p>Sök recept på valfri fördrink här nedan:</p>
+        </header>
+
+        <div id="searchDiv">
+          <p>
+            <input id="searchText" type="text" placeholder="Sök på en drink...">
+            <button id="searchButton" type="button">Sök</button>
+          </p>
+          
+          <div id="searchResult"></div>
+        </div> <!-- end searchDiv -->
+      </section>
+    </main>
+
+    <footer>
+      <address>
+        <p class="heading">Hitta till oss:</p>
+        <p>Vägvägen 32, Staden</p>
+      </address>
+      <address>
+        <p class="heading">Ring oss:</p>
+        <p>070 007 07 07</p>
+      </address>
+      <address>
+        <p class="heading">Maila oss:</p>
+        <p>eat@it.com</p>
+      </address>
+    </footer>
+
+    <div id="copyright">
+      <p>&copy; Jessica Kjellin</p>
+    </div> <!--end copyright-->
+
+  </div> <!--end wrapper-->
+</body>
+
+</html>
